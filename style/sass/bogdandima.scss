@@ -31,7 +31,7 @@ header{
   background-attachment: fixed;
 		margin: 0;
 }
-header{
+
 	//background images and text
 	.cb-slideshow{
 		margin: 0;
@@ -289,7 +289,12 @@ header{
 		height: 70%;
 		width: 100%;
 	}
+
+.container{
+	//height:100%;
+	//position: relative;
 }
+
 #section{
 	.gallx{
 		overflow: hidden;
@@ -487,6 +492,297 @@ header{
 		margin: 0 50px;
 		//background-attachment: fixed;
 	}
+	#secondBridge {
+		height:500px;
+		background-image: url('../../img/DSC00303.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center top;
+		background-attachment: fixed;
+	}
+	#icons{
+		width: 100%;
+		height: 100%;
+		//position: absolute;
+		// overflow: auto;
+	}
+	.clearFix{
+		clear: both;
+	}
+	.icon{
+		width: 33.33%;
+		height: 33.33%;
+		float:left;
+	}
+	// .iconImgHide{
+	// 	opacity: 0;
+	// 	transition: 1s;
+	// 	z-index:-1;
+	// }
+	.icon img{
+		width: 100%;
+	}
+	.imagesCont{
+		height:100%;
+		margin-top: -100%;
+		opacity: 0;
+		overflow: hidden;
+	}
+	// .showImagesCont{
+	// 	opacity:1;
+	// 	transition:opacity 1.5s linear, max-height 1.5s linear;
+	// 	 z-index: 100;
+	// }
+	.icon:hover{
+		.iconImg{
+			visibility: hidden;
+			transition: all 2s;
+			// z-index: -10000;
+		}
+		.imagesCont, .images{
+				opacity: 1;
+				transition: all 2s;
+		}
+		//
+		// .images:hover{
+		// 	.images{
+		// 		z-index: 100000;
+		// 	}
+		// }
+	}
+	.images{
+		height: 33.33%;
+		width: 33.33%;
+		float: left;
+	}
+	#icons .images img{
+		object-fit: cover;
+		width: 9rem;
+		height: 6rem;
+		    margin-top: -4px;
+	}
+	#icons:after {
+	    content: '';
+	    display: block;
+	    clear: both;
+	}
+	//Modal
+	.modal{
+	    display: none;
+	    position: fixed;
+	    z-index: 100000000000;
+	    padding-top: 100px;
+	    left: 0;
+	    top: 0;
+	    width: 100%;
+	    height: 100%;
+	    overflow: auto;
+	    background-color: rgb(0,0,0);
+	    background-color: rgba(0,0,0,0.9);
+	}
+	.closeModal{
+		position: absolute;
+		top: 45px;
+		right: 45px;
+		color: #f1f1f1;
+		font-size: 40px;
+		font-weight: bold;
+		transition: 0.3s;
+		float: right;
+		line-height: 1;
+		text-shadow: 0 1px 0 #fff;
+		opacity: .5;
+		cursor: pointer;
+		font-family: cursive;
+	}
+	.closeModal{
+	    &:before, &:after {
+	        $width: 50px;
+	        $height: 10px;
+	        transform: rotate(-45deg);
+	        content: '';
+	        position: absolute;
+	        top: 50%;
+	        right: 50%;
+	        margin-top: -$height/2;
+	        margin-right: -$width/2;
+	        display: block;
+	        height: $height;
+	        width: $width;
+	        background-color: #fff;
+	        transition: all 0.25s ease-out;
+	    }
+
+	    &:after {
+	        transform: rotate(-135deg);
+	    }
+
+	    &:hover {
+
+	        &:before, &:after {
+	            transform: rotate(0deg);
+	        }
+	    }
+	}
+
+	.modalImg{
+		position: relative;
+		margin: auto;
+	    display: block;
+	    max-height: 80%;
+	    max-width: 700px;
+			flex-direction: column;
+	    background-color: #fff;
+	    background-clip: padding-box;
+	    border: 1px solid rgba(0,0,0,.2);
+	    border-radius: .3rem;
+	    outline: 0;
+	}
+	.modalDescription{
+		animation-name: zoom;
+		animation-duration: 0.6s;
+	    margin: auto;
+	    display: block;
+			min-height: 10%;
+	}
+
+	//Contact:
+	$textColor: rgb(209, 226, 255);
+	#thirdBridge {
+			height:800px;
+			background-image: url('../../img/Ceahlau7.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center top;
+		  background-attachment: fixed;
+			padding: 70px;
+	}
+	.thirdBridge{
+		height: 100%;
+	}
+	.contactContainer{
+		background-color: rgba(232, 237, 244, .2);
+		height:100%;
+		width:100%;
+		border-radius: 10px;
+	}
+	.contactMe{
+		color:$textColor;
+		text-transform: uppercase;
+		text-shadow: none;
+		font-size: 25px;
+		font-weight: 800;
+		letter-spacing: 1px;
+		margin: 0 auto;
+		width: 100%;
+		text-align: center;
+		padding-top: 20px;
+	}
+	.contactSubtitle{
+			color:$textColor;
+			width: 100%;
+			text-align: center;
+			font-size: 18px;
+			text-transform: uppercase;
+			text-shadow: none;
+			margin-top: 10px;
+	}
+	.contactSContainer{
+		float:left;
+		width: 100%;
+	}
+	.contactForms, .contactNoForms{
+		float:left;
+		width: 50%;
+		padding: 30px;
+		padding-top: 0;
+		box-sizing: border-box;
+	}
+	.contTypeTitle{
+		text-align: center;
+				color:$textColor;
+	}
+	form{
+		background-color: rgba(232, 237, 244, .5);
+	}
+	form *{
+		border: none;
+	}
+	lebel {
+		margin-left: 5%;
+		margin-top: 2%;
+	}
+	.inputWrap{
+		margin: 5px 0;
+	}
+	form input {
+		width: 90%;
+		height: 40px;
+		margin: 0 5%;
+	}
+	textarea{
+		height: 80px;
+		width: 90%;
+		margin: 0 5%;
+	}
+	.inputRadio input{
+		width: 10px;
+		height: 10px;
+		margin: 0 5%;
+	}
+	.inputRadio lebel{
+		margin-left: 0;
+	}
+	.inputBut{
+		margin-bottom: 5%;
+		border-radius: 5px;
+	}
+	.inputBut:hover{
+		background-color: rgb(175, 199, 237);
+	}
+	.contactsBtns{
+		color: $textColor;
+		height:40px;
+		width: 100%;
+		border: 2px solid $textColor;
+		border-radius: 10px;
+		text-align: center;
+		width: 250px;
+		line-height: 40px;
+		text-decoration: none;
+		margin: auto;
+	}
+	.contactNoForms a{
+		text-decoration: none;
+	}
+	.phone .contactsBtns{
+		width: 150px;
+	}
+	.contactNoForms h5{
+		width: 100%;
+		text-align: center;
+	}
+	.socialCont{
+		margin: 0 auto;
+		width: 192px;
+		height: 40px;
+	}
+	.socialM{
+		width: 40px;
+		line-height: 40px;
+		float: left;
+		text-align: center;
+		margin: 0 10px;
+	}
+	.socialM img{
+		margin: 8px;
+		height: 20px;
+	}
+	#map{
+		margin-top: 20px;
+		width: 100%;
+		height: 300px;
+	}
 }
 
 footer{
@@ -512,6 +808,7 @@ footer{
 	text-decoration: none;
 	}
 }
+
 
 @media only screen and (max-width: $mediu){
 	.hideMenu {
@@ -562,7 +859,20 @@ footer{
 	// 	font-size: 3px;
 	// 	//margin-top: 10%;
 	// }
-
+	.galleryLinks{
+		width: 50%;
+	}
+	.icon{
+		width: 50%;
+		height: 50%;
+	}
+	.cb-slideshow li div h3 { font-size: 60px }
+	#thirdBridge {
+    height: 1500px;
+	}
+	.contactForms, .contactNoForms{
+		width: 100%;
+	}
 }
 @media only screen and (max-width: $mic){
 	.hideMenu {
@@ -595,6 +905,21 @@ footer{
 		width: 100%;
 		height: 30px;
 	}
+	.galleryLinks{
+		width: 100%;
+	}
+	.cb-slideshow li .mainBckImageSpan{
+		background-size: auto;
+	}
+	.cb-slideshow li .bridgeBckImageSpan{
+		background-size: auto;
+	}
+	.icon{
+		width: 100%;
+		height: 100%;
+	}
+
+	.cb-slideshow li div h3 { font-size: 40px }
 }
 #scrollBtn{
 	margin-bottom: 5%;

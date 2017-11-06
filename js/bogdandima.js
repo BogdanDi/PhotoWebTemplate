@@ -1,4 +1,4 @@
-//smooth scroll
+// Smooth scroll
 $('a[href*="#"]')
   .not('[href="#"]')
   .not('[href="#0"]')
@@ -21,14 +21,14 @@ $('a[href*="#"]')
             return false;
           } else {
             $target.attr('tabindex','-1');
-            $target.focus(); 
+            $target.focus();
           };
         });
       }
     }
   });
 
-
+//show/hide menu button
 var showHideMenu = function(){
   $('#menuButton').click(function(){
     $('#mainNav').toggleClass("showMenu");
@@ -46,7 +46,7 @@ $(window).scroll(function(){
 });
 
 
-
+//check if scrolled / change menu class
 $(window).scroll(function() {
    var hT = $('header').offset().top,
        hH = $('header').outerHeight(),
@@ -56,3 +56,33 @@ $(window).scroll(function() {
        $('.galimg').addClass('galScrolled');
    }
 });
+
+//for modal
+$('.images').click(function(){
+  var modal=$('.modal');
+  var imagine=$('.modalImg');
+  var name=$(this).children().attr("src");
+  modal.css('display', 'block');
+  imagine.attr('src', name);
+  //alert(name);
+})
+$('.closeModal').click(function(){
+  $('.modal').css('display', 'none');
+})
+$('.modal').click(function(){
+  $('.modal').css('display', 'none');
+}).children().click(function(e) {
+  return false;
+});
+
+
+//myMap
+function myMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(47.155331, 27.625492),
+        zoom: 17,
+        mapTypeId: google.maps.MapTypeId.HYBRID
+    }
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+myMap();
