@@ -223,6 +223,154 @@ header .headerContent {
   height: 70%;
   width: 100%; }
 
+#section .gallx {
+  overflow: hidden; }
+#section .galleryLinks {
+  width: 33.33%;
+  height: 100%;
+  float: left;
+  filter: grayscale(100%);
+  margin-top: -5px; }
+#section .galleryLinks img {
+  width: 100%;
+  height: 100%; }
+#section .galScrolled {
+  width: 100%;
+  height: 100%;
+  transition: 3s; }
+#section .galleryLinks:hover {
+  filter: initial;
+  transform: scale(1.05);
+  transition: 1s;
+  z-index: 1; }
+#section .qwe:after {
+  content: '';
+  display: block;
+  clear: both; }
+#section #bridge {
+  position: relative;
+  margin-top: -5px;
+  height: 500px;
+  overflow: hidden; }
+#section #bridgeUl {
+  height: 100%;
+  width: 100%;
+  padding: 0; }
+#section #bridgeUl li {
+  position: absolute;
+  height: 100%;
+  width: 100%; }
+#section .cb-slideshow li .bridgeBckImageSpan {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: transparent;
+  background-size: 100%;
+  background-position: 50% 80%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+  -webkit-animation: imageAnimationB 70s linear infinite 0s;
+  -moz-animation: imageAnimationB 70s linear infinite 0s;
+  -o-animation: imageAnimationB 70s linear infinite 0s;
+  -ms-animation: imageAnimationB 70s linear infinite 0s;
+  animation: imageAnimationB 70s linear infinite 0s; }
+#section .cb-slideshow li:nth-child(1) .bridgeBckImageSpan {
+  background-image: url(../../img/DSC00172-2.jpg); }
+#section .cb-slideshow li:nth-child(2) .bridgeBckImageSpan {
+  background-image: url(../../img/Noapte2.jpg);
+  -webkit-animation-delay: 10s;
+  -moz-animation-delay: 10s;
+  -o-animation-delay: 10s;
+  -ms-animation-delay: 10s;
+  animation-delay: 10s; }
+#section .cb-slideshow li:nth-child(3) .bridgeBckImageSpan {
+  background-image: url(../../img/rarau1.jpg);
+  -webkit-animation-delay: 20s;
+  -moz-animation-delay: 20s;
+  -o-animation-delay: 20s;
+  -ms-animation-delay: 20s;
+  animation-delay: 20s; }
+#section .cb-slideshow li:nth-child(4) .bridgeBckImageSpan {
+  background-image: url(../../img/Noapte3.jpg);
+  -webkit-animation-delay: 30s;
+  -moz-animation-delay: 30s;
+  -o-animation-delay: 30s;
+  -ms-animation-delay: 30s;
+  animation-delay: 30s; }
+#section .cb-slideshow li:nth-child(5) .bridgeBckImageSpan {
+  background-image: url(../../img/Noapte6.jpg);
+  -webkit-animation-delay: 40s;
+  -moz-animation-delay: 40s;
+  -o-animation-delay: 40s;
+  -ms-animation-delay: 40s;
+  animation-delay: 40s; }
+#section .cb-slideshow li:nth-child(6) .bridgeBckImageSpan {
+  background-image: url(../../img/colibita2.jpg);
+  -webkit-animation-delay: 50s;
+  -moz-animation-delay: 50s;
+  -o-animation-delay: 50s;
+  -ms-animation-delay: 50s;
+  animation-delay: 50s; }
+#section .cb-slideshow li:nth-child(7) .bridgeBckImageSpan {
+  background-image: url(../../img/Noapte1.jpg);
+  -webkit-animation-delay: 60s;
+  -moz-animation-delay: 60s;
+  -o-animation-delay: 60s;
+  -ms-animation-delay: 60s;
+  animation-delay: 60s; }
+@keyframes imageAnimationB {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in; }
+  8% {
+    opacity: 1;
+    transform: scale(1.05);
+    animation-timing-function: ease-out; }
+  17% {
+    opacity: 1;
+    transform: scale(1.2);
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    transform-origin: 50% 100%; }
+  25% {
+    opacity: 0;
+    transform: scale(1.3); }
+  100% {
+    opacity: 0; } }
+#section #about h2 {
+  text-transform: uppercase;
+  text-align: center; }
+#section #about p {
+  padding: 20px 50px; }
+#section .brAbout {
+  height: 300px;
+  background-image: url("../../img/Calimani1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  margin: 0 50px; }
+
+footer .footer {
+  height: 45px;
+  line-height: 45px;
+  padding-left: 30px; }
+footer .social {
+  float: right;
+  margin-right: 30px; }
+footer .social img {
+  margin: 10px; }
+footer .footer p {
+  text-align: center; }
+footer .footer p a {
+  text-decoration: none; }
+
 @media only screen and (max-width: 830px) {
   .hideMenu {
     display: none; }

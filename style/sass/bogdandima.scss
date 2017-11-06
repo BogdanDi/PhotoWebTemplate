@@ -290,6 +290,228 @@ header{
 		width: 100%;
 	}
 }
+#section{
+	.gallx{
+		overflow: hidden;
+		//position: absolute;
+	}
+	.galleryLinks{
+		width: 33.33%;
+		height: 100%;
+		float:left;
+		filter: grayscale(100%);
+		margin-top: -5px;
+	}
+	//modificat din 120% in 100%
+	.galleryLinks img{
+		width: 100%;
+		height: 100%;
+	}
+	.galScrolled{
+		width: 100%;
+		height: 100%;
+		transition: 3s;
+	}
+	.galleryLinks:hover{
+		filter: initial;
+		transform: scale(1.05);
+		transition: 1s;
+		z-index: 1;
+	}
+	.qwe:after {
+	    content: '';
+	    display: block;
+	    clear: both;
+	}
+
+
+
+	#bridge{
+		position: relative;
+	  margin-top: -5px;
+		height:500px;
+		overflow: hidden;
+	}
+	// .firstBridge{
+	// 	margin-top: -5px;
+	// 	height:100%;
+	// 	background-image: url('../../img/DSC00172-2.jpg');
+	// 	background-repeat: no-repeat;
+	// 	background-size: cover;
+	// 	background-position: center center;
+	// 	background-attachment: fixed;
+	// //position: absolute;
+	// }
+	// .firstBridgeB{
+	// 	background-size: 150%;
+	// 	-webkit-transition: all 10s ease-out;
+	//     -moz-transition: all 10s ease-out;
+	//     -o-transition: all 10s ease-out;
+	// 	transition: all 10s ease-out;
+	// }
+	// .firstBridge:hover{
+	// transform: scale(1.5);
+	// transition: 10s;
+	// }
+	#bridgeUl {
+	    height: 100%;
+	    width: 100%;
+
+	    padding: 0;
+	}
+
+	#bridgeUl li {
+		position: absolute;
+	    height: 100%;
+	    width: 100%;
+	}
+	.cb-slideshow li .bridgeBckImageSpan {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		color: transparent;
+	  background-size: 100%;
+	  background-position: 50% 80%;
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;
+	  opacity: 0;
+	  z-index: -1;
+		-webkit-backface-visibility: hidden;
+		-webkit-animation: imageAnimationB 70s linear infinite 0s;
+		-moz-animation: imageAnimationB 70s linear infinite 0s;
+		-o-animation: imageAnimationB 70s linear infinite 0s;
+		-ms-animation: imageAnimationB 70s linear infinite 0s;
+		animation: imageAnimationB 70s linear infinite 0s;
+	}
+
+	.cb-slideshow li:nth-child(1) .bridgeBckImageSpan {
+	    background-image: url(../../img/DSC00172-2.jpg)
+	}
+	.cb-slideshow li:nth-child(2) .bridgeBckImageSpan {
+	    background-image: url(../../img/Noapte2.jpg);
+	    -webkit-animation-delay: 10s;
+	    -moz-animation-delay: 10s;
+	    -o-animation-delay: 10s;
+	    -ms-animation-delay: 10s;
+	    animation-delay: 10s;
+	}
+	.cb-slideshow li:nth-child(3) .bridgeBckImageSpan {
+	    background-image: url(../../img/rarau1.jpg);
+	    -webkit-animation-delay: 20s;
+	    -moz-animation-delay: 20s;
+	    -o-animation-delay: 20s;
+	    -ms-animation-delay: 20s;
+	    animation-delay: 20s;
+	}
+	.cb-slideshow li:nth-child(4) .bridgeBckImageSpan {
+	    background-image: url(../../img/Noapte3.jpg);
+	    -webkit-animation-delay: 30s;
+	    -moz-animation-delay: 30s;
+	    -o-animation-delay: 30s;
+	    -ms-animation-delay: 30s;
+	    animation-delay: 30s;
+	}
+	.cb-slideshow li:nth-child(5) .bridgeBckImageSpan {
+	    background-image: url(../../img/Noapte6.jpg);
+	    -webkit-animation-delay: 40s;
+	    -moz-animation-delay: 40s;
+	    -o-animation-delay: 40s;
+	    -ms-animation-delay: 40s;
+	    animation-delay: 40s;
+	}
+	.cb-slideshow li:nth-child(6) .bridgeBckImageSpan {
+	    background-image: url(../../img/colibita2.jpg);
+	    -webkit-animation-delay: 50s;
+	    -moz-animation-delay: 50s;
+	    -o-animation-delay: 50s;
+	    -ms-animation-delay: 50s;
+	    animation-delay: 50s;
+	}
+	.cb-slideshow li:nth-child(7) .bridgeBckImageSpan {
+	    background-image: url(../../img/Noapte1.jpg);
+	    -webkit-animation-delay: 60s;
+	    -moz-animation-delay: 60s;
+	    -o-animation-delay: 60s;
+	    -ms-animation-delay: 60s;
+	    animation-delay: 60s;
+	}
+
+	@keyframes imageAnimationB {
+		0% {
+		    opacity: 0;
+		    animation-timing-function: ease-in;
+		}
+		8% {
+		    opacity: 1;
+		    transform: scale(1.05);
+		    animation-timing-function: ease-out;
+		}
+		17% {
+		    opacity: 1;
+		    transform: scale(1.2);
+				-webkit-transform-origin : 50% 100%;
+		    -moz-transform-origin : 50% 100%;
+		    -o-transform-origin : 50% 100%;
+		    -ms-transform-origin : 50% 100%;
+		    transform-origin : 50% 100%;
+		}
+		25% {
+		    opacity: 0;
+		    transform: scale(1.3);
+		}
+		100% { opacity: 0 }
+	}
+
+
+
+
+
+	#about{
+		//position: absolute;
+	}
+	#about h2{
+		text-transform: uppercase;
+		text-align: center;
+	}
+	#about p{
+		padding: 20px 50px;
+	}
+	.brAbout{
+		height: 300px;
+		background-image: url('../../img/Calimani1.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center top;
+		margin: 0 50px;
+		//background-attachment: fixed;
+	}
+}
+
+footer{
+	.footer{
+		//z-index: 10;
+		height: 45px;
+		line-height: 45px;
+		padding-left: 30px;
+	}
+	.social {
+		// position:absolute;
+		// bottom: 2px;
+		float: right;
+		margin-right: 30px;
+	}
+	.social img{
+		margin: 10px
+	}
+	.footer p {
+		text-align: center;
+	}
+	.footer p a{
+	text-decoration: none;
+	}
+}
 
 @media only screen and (max-width: $mediu){
 	.hideMenu {
